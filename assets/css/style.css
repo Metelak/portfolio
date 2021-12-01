@@ -1,0 +1,23 @@
+/*:root {}*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #8da242;
+}
+
+.header h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 36px;
+    color: #0b4141;
+}
+
+.header a {
+    text-decoration: none;
+    color: #5c6e58;
+}
