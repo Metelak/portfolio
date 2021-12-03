@@ -54,6 +54,10 @@ body {
     font-size: 15px;
   }
 
+  .header nav ul li a:hover {
+    color:#fff;
+  }
+
   /* hero style */
   .hero {
     height: 250px;
@@ -72,23 +76,147 @@ body {
     text-align:center;
   }
 
-  /* section style */
-  .section-title {
-    border-right: 5px solid #000;
-  }
-
   /* about me style */
  .about-me {
-   margin:30px;
+   height: fit-content;
+   margin:15px;
+   margin-bottom: 0px;
    padding: 20px 40px;
-   margin-bottom: 20px;
    background-color: #74afac;
+   display: flex;
  }
 
  .about-me h2 {
-   height:fit-content;
    float:left;
    font-size: 35px;
-   border: #000;
+   text-align:right;
  }
-   
+
+ .about-me-title {
+   margin-right: 20px;
+   padding-right: 20px;
+   border-right: 3px solid #000;
+ }
+
+ .intro{
+   font-size: 14px;
+   color: #000;
+ }
+
+ /* work style */
+ .work {
+   margin: 0px 15px;
+   padding: 20px 53px;
+   background-color: #74afac;
+   display: flex;
+ }
+
+ .work h2 {
+  float:left;
+  font-size: 35px;
+  text-align:right;
+}
+
+.work-title {
+  margin-right: 20px;
+  padding-right: 20px;
+  border-right: 3px solid #000;
+}
+
+.project-one {
+  margin-right: 20px;
+  padding: 30px;
+  background-color: #5c6e58;
+  flex-wrap: wrap;
+}
+
+.project-one a {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+.project-one:hover {
+  background: #fff;
+}
+
+.project-one a:hover {
+  color: #000;
+}
+
+.project-two {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+  padding: 30px;
+  background-color: #5c6e58;
+  flex-wrap: wrap;
+}
+
+.project-two:hover {
+  background: #fff;
+  color: #000;
+}
+
+.project-three {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+  padding: 30px;
+  background-color: #5c6e58;
+  flex-wrap: wrap;
+}
+
+.project-three:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* contact me style */
+.contact-me {
+   height: fit-content;
+   margin:15px;
+   margin-top: 0px;
+   padding: 20px 40px;
+   background-color: #74afac;
+   display: flex;
+ }
+
+ .contact-me h2 {
+   float:left;
+   font-size: 35px;
+   text-align:right;
+ }
+
+ .contact-me-title {
+   margin-right: 20px;
+   padding-right: 20px;
+   border-right: 3px solid #000;
+ }
+
+ .contact-me ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+ }
+
+ .contact-me ul li a {
+  display: inline-block;
+  padding: 10px;
+  font-style: oblique;
+  font-weight: bold;
+  font-size: 15px;
+  text-decoration: none;
+  color: #5c6e58
+ }
+
+ .contact-me ul li a:hover {
+   color: #fff;
+ }
