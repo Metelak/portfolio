@@ -94,12 +94,14 @@ body {
    text-align:right;
  }
 
+@media screen and (min-width: 981px) {
  .about-me-title {
    margin-right: 20px;
    padding-right: 20px;
    border-right: 3px solid #000;
    flex-basis: 20%;
  }
+}
 
  .intro{
    font-size: 14px;
@@ -122,11 +124,13 @@ body {
   text-align:right;
 }
 
-.work-title {
-  margin-right: 20px;
-  padding-right: 20px;
-  border-right: 3px solid #000;
-  flex-basis: 20%;
+@media screen and (min-width: 981px) {
+  .work-title {
+    margin-right: 20px;
+    padding-right: 20px;
+    border-right: 3px solid #000;
+    flex-basis: 20%;
+  }
 }
 
 .projects {
@@ -220,12 +224,14 @@ body {
    text-align:right;
  }
 
- .contact-me-title {
-   margin-right: 20px;
-   padding-right: 20px;
-   border-right: 3px solid #000;
-   flex-basis: 20%;
- }
+ @media screen and (min-width: 981px) {
+  .contact-me-title {
+    margin-right: 20px;
+    padding-right: 20px;
+    border-right: 3px solid #000;
+    flex-basis: 20%;
+  }
+}
 
  .contact-me ul {
   display: flex;
@@ -261,14 +267,38 @@ body {
       flex-direction:column;
     }
 
-    .about-me h2 {
-      text-align: center;
-      float: center;
-    }
-
     .about-me-title {
       margin-bottom: 20px;
       border-bottom: 3px solid #000;
+      flex-basis: 100%;
+    }
+
+    .intro p {
+      width: 100%;
+    }
+
+    .work {
+      flex-direction:column;
+    }
+
+    .work-title {
+      margin-bottom: 20px;
+      border-bottom:3px solid #000;
+      flex-basis: 100%;
+    }
+
+    .projects {
+      flex-direction: column;
+      height: 
+    }
+
+    .contact-me {
+      flex-direction: column;
+    }
+
+    .contact-me-title {
+      margin-bottom: 20px;
+      border-bottom:3px solid #000;
       flex-basis: 100%;
     }
   }
