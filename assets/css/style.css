@@ -109,6 +109,8 @@ body {
    padding: 20px 53px;
    background-color: #74afac;
    display: flex;
+   flex-direction: row;
+   justify-content:
  }
 
  .work h2 {
@@ -119,31 +121,46 @@ body {
 
 .work-title {
   margin-right: 20px;
-  padding-right: 20px;
   border-right: 3px solid #000;
+  flex-basis: 20%;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .project-one {
-  margin-right: 20px;
-  padding: 30px;
-  background-color: #5c6e58;
-  flex-wrap: wrap;
+  height: 300px;
+  background-image: url("../images/project1.jpg");
+  background-size: cover;
+  text-decoration: none;
+  flex: 0 0 100%;
+  margin: 5px;
 }
 
-.project-one a {
+.project-one h3 {
   font-size: 20px;
   font-weight: bold;
   color: #fff;
   text-decoration: none;
 }
 
-.project-one:hover {
-  background: #fff;
+.project-one-layer {
+  background-color: rgb(0, 0, 0, .5);
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
 }
 
-.project-one a:hover {
-  color: #000;
+.project-one-layer:hover {
+  background: rgb(255, 255, 255, .0);
+  width: 100%;
+  height: 100%;
 }
+
 
 .project-two {
   font-size: 20px;
@@ -154,6 +171,8 @@ body {
   padding: 30px;
   background-color: #5c6e58;
   flex-wrap: wrap;
+  flex-basis: calc(50% - 1em);
+  margin: 5px;
 }
 
 .project-two:hover {
@@ -170,6 +189,8 @@ body {
   padding: 30px;
   background-color: #5c6e58;
   flex-wrap: wrap;
+  flex-basis: calc(50% - 1em);
+  margin: 5px;
 }
 
 .project-three:hover {
@@ -212,7 +233,7 @@ body {
   padding: 10px;
   font-style: oblique;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 20px;
   text-decoration: none;
   color: #5c6e58
  }
