@@ -19,6 +19,7 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     background-size: cover;
+    flex-direction: row;
   }
 
 .header h1 {
@@ -84,6 +85,7 @@ body {
    padding: 20px 40px;
    background-color: #74afac;
    display: flex;
+   flex-direction: row;
  }
 
  .about-me h2 {
@@ -96,11 +98,13 @@ body {
    margin-right: 20px;
    padding-right: 20px;
    border-right: 3px solid #000;
+   flex-basis: 20%;
  }
 
  .intro{
    font-size: 14px;
    color: #000;
+   flex-basis: 80%;
  }
 
  /* work style */
@@ -110,7 +114,6 @@ body {
    background-color: #74afac;
    display: flex;
    flex-direction: row;
-   justify-content:
  }
 
  .work h2 {
@@ -121,6 +124,7 @@ body {
 
 .work-title {
   margin-right: 20px;
+  padding-right: 20px;
   border-right: 3px solid #000;
   flex-basis: 20%;
 }
@@ -137,10 +141,11 @@ body {
   background-size: cover;
   text-decoration: none;
   flex: 0 0 100%;
-  margin: 5px;
+  margin-right: 5px;
 }
 
 .project-one h3 {
+  padding-left: 10px;
   font-size: 20px;
   font-weight: bold;
   color: #fff;
@@ -206,6 +211,7 @@ body {
    padding: 20px 40px;
    background-color: #74afac;
    display: flex;
+   flex-direction: row;
  }
 
  .contact-me h2 {
@@ -218,6 +224,7 @@ body {
    margin-right: 20px;
    padding-right: 20px;
    border-right: 3px solid #000;
+   flex-basis: 20%;
  }
 
  .contact-me ul {
@@ -226,6 +233,7 @@ body {
   justify-content: space-between;
   align-items: center;
   list-style: none;
+  flex-basis: 80%;
  }
 
  .contact-me ul li a {
@@ -241,3 +249,26 @@ body {
  .contact-me ul li a:hover {
    color: #fff;
  }
+
+ /* Media screen */
+ @media screen and (max-width: 980px) {
+    .header nav {
+      float:none;
+      width:100%;
+    }
+
+    .about-me {
+      flex-direction:column;
+    }
+
+    .about-me h2 {
+      text-align: center;
+      float: center;
+    }
+
+    .about-me-title {
+      margin-bottom: 20px;
+      border-bottom: 3px solid #000;
+      flex-basis: 100%;
+    }
+  }
