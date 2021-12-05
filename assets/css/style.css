@@ -23,10 +23,9 @@ body {
   }
 
 .header h1 {
-    display: inline-block;
     font-weight: bold;
     margin: 0;
-    font-size: 36px;
+    font-size: 45px;
     color: #74afac;
 }
 
@@ -89,7 +88,7 @@ body {
  }
 
  .about-me h2 {
-   font-size: 35px;
+   font-size: 30px;
    text-align:right;
  }
 
@@ -119,7 +118,7 @@ body {
  }
 
  .work h2 {
-  font-size: 35px;
+  font-size: 30px;
   text-align:right;
 }
 
@@ -156,6 +155,7 @@ body {
   font-weight: bold;
   color: #fff;
   text-decoration: none;
+  
 }
 
 .project-one-layer {
@@ -235,7 +235,7 @@ body {
  }
 
  .contact-me h2 {
-   font-size: 35px;
+   font-size: 30px;
    text-align:right;
  }
 
@@ -272,6 +272,12 @@ body {
 
  /* Media screen */
  @media screen and (max-width: 980px) {
+   .header {
+     flex-direction: column;
+   }
+    .header h1 {
+      text-align: center;
+    }
     .header nav ul {
       margin-top: 20px;
       width:100%;
@@ -312,7 +318,17 @@ body {
 
     .projects {
       flex-direction: column;
+      width: 90%;
       margin: 20px;
+      padding-left: 20px;
+    }
+
+    .project-one {
+      margin-bottom: 20px;
+    }
+
+    .project-two {
+      margin-bottom: 20px;
     }
 
     .contact-me {
@@ -320,7 +336,7 @@ body {
     }
 
     .contact-me h2 {
-      float: center;
+      text-align: center;
     }
 
     .contact-me-title {
